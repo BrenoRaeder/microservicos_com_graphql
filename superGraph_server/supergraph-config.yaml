@@ -1,0 +1,9 @@
+subgraphs:
+  produtos:
+    routing_url: http://localhost:4001
+    schema:
+      file: ../produtos/produtos.graphql
+  usuarios:
+    routing_url: http://localhost:4000
+    schema:
+      file: ../usuario/usuario.graphql

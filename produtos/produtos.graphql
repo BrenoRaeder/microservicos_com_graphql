@@ -1,0 +1,20 @@
+type Query{
+    produtos: [Produto!]!,
+    produto(id: ID!): Produto,
+    categorias: [Categoria!]!,
+    categoria(id: ID!): Categoria 
+}
+
+type Produto{
+    id: ID!,
+    nome: String!,
+    preco: Float!,
+    categoria: Categoria,
+    img: String!
+}
+
+type Categoria{
+    id: ID!,
+    nome: String!,
+    produtos: [Produto!]!
+}

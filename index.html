@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho SO2</title>
+</head>
+<body>
+    <div class="tela">
+        <div class="tela_usuarios">
+            <h1 class="titulo_usuarios">Usuários</h1>
+            <select class="cxaSelecao_usuario">
+                <option selected hidden>Usuarios</option>
+            </select>
+            <div class="cxa_usuarios">
+                
+            </div>
+        </div>
+
+        <div class="tela_produtos">
+            <h1 class="titulo_produtos">Produtos</h1>
+            <div class="btn_comprar">COMPRAR</div>
+            <div class="cxa_categorias">
+                <div id="cat01">Cozinha</div>
+                <div id="cat02">Esporte</div>
+                <div id="cat03" class="cat03">Jardinagem</div>
+            </div>
+            <div class="cxa_comprar_produtos">
+                <div class="cxa_comprar">
+                    <div class="selecao_produto">
+                        <select  class="cxaSelecao_produto">
+                            <option selected hiden>Produtos</option>
+                        </select>
+                        <label for="qtd">qtd</label>
+                        <input type="number" name="qtd" class="qtd_produto" min="1">
+                    </div>
+                    <select  class="cxaSelecao_usuario_compra">
+                            <option selected hiden>Usuario</option>
+                    </select>
+                    <div class="selecao_produto_comprarBtn">Confirmar Compra</div>
+                </div>
+            </div>
+            <div class="cxa_produtos">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./usuario/usuario_app.js"></script>
+<script src="./produtos/produtos_app.js"></script>
+</html>

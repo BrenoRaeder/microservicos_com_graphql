@@ -1,0 +1,10 @@
+type Query{
+    usuarios: [Usuario!]!,
+    usuario(id: ID!): Usuario 
+}
+
+type Usuario{
+    id: ID!,
+    nome: String!,
+    email: String!
+}
